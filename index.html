@@ -9,7 +9,7 @@
 <body style="background-color:#b4fff7; text-align: center">
     <h1>TARKAVA ARENDUSPROTSESSI TEHTUD TÖÖDE KONSPEKT</h1>
     <br/>
-    <h2>ELUTSÜKKEL</h2>
+    <h1>ELUTSÜKKEL</h1>
     <br>
     <!--Image map-->
     <img src="Pildid/elutsykkel.png" width="1280" height="720" alt="Elutsükkel" usemap="#elukaart">
@@ -23,12 +23,19 @@
     <br>
     <br>
     <br>
-    <h2>CASE-VAHENDID</h2>
+    <h1>CASE-VAHENDID</h1>
     <br>
-    <!--lisa siia pilt mis juhendab CASE vahendite lehele-->
+    <img src="Pildid/CASE-vahendid.png" width="1280" height="720" alt="CASE-vahendid" usemap="#CASE-vahendid">
+
+    <map name="CASE-vahendid">
+        <area shape="rect" coords="0,0,1280,360" alt="CASE-vahendid" href="CASE-vahendid/main.html">
+        <area shape="rect" coords="0,360,640,720" alt="Upper CASE-vahendid" href="CASE-vahendid/uppercase.html">
+        <area shape="rect" coords="640,360,1280,720" alt="Lower CASE-vahendid" href="CASE-vahendid/lowercase.html">
+    </map>
+    <!--lisa siia pilt mis juhendab CASE vahendite lehele
     <a href="/CASE-vahendid/main.html">CASE-VAHENDID</a><br>
-    <a href="/CASE-vahendid/uppercase.html">uppercase-vahendid</a><br>
-    <a href="/CASE-vahendid/lowercase.html">lowercase-vahendid</a>
+    <a href="/CASE-vahendid/uppercase.html">upper CASE-vahendid</a><br>
+    <a href="/CASE-vahendid/lowercase.html">lower CASE-vahendid</a>-->
     <br>
     <!--Tabel-->
     <h2> Minust </h2>
@@ -54,13 +61,30 @@
     <br>
     <br>
     <br>
+<footer>
     <hr>
-    <footer>
-    <p>Elutsükkel</p>
-    <a href="elutsykkel/waterfall.html">Waterfall mudel</a><br>
-    <a href="elutsykkel/Inkremental.html">Inkrementaalne mudel</a><br>
-    <a href="elutsykkel/Spiraalmudel.html">Spiraalmudel</a><br>
-    <a href="elutsykkel/Prototyypimine.html">Prototüüpimine</a><br>
-    </footer>
+    <table style="margin:auto">
+        <tr>
+            <td>Elutsükkel</td>
+            <td>CASE-vahendid</td>
+        </tr>
+        <tr>
+            <td><a href="elutsykkel/waterfall.html">Waterfall mudel</a></td>
+            <td><a href="CASE-vahendid/main.html">CASE-vahendid</a></td>
+        </tr>
+        <tr>
+            <td><a href="elutsykkel/Inkremental.html">Inkrementaalne mudel</a></td>
+            <td><a href="CASE-vahendid/uppercase.html">Upper CASE-vahendid</a></td>
+        </tr>
+        <tr>
+            <td><a href="elutsykkel/Spiraalmudel.html">Spiraalmudel</a></td>
+            <td><a href="CASE-vahendid/lowercase.html">Lower CASE-vahendid</a></td>
+        </tr>
+        <tr>
+            <td><a href="elutsykkel/Prototyypimine.html">Prototüüpimine</a></td>
+            <td></td>
+        </tr>
+    </table>
+</footer>
 </body>
 </html>
