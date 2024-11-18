@@ -14,6 +14,60 @@
      toetab sagedasi "avaldamisi" lühikeste arengutsüklite jooksul, parandamaks produktiivsust ja tutvustamaks
       kontrollpunkte, kus uued kliendi nõuded vastu võtta.
     </p>
+    <h2>Ekstreemprogrammeerimise elemendid</h2>
+    <p>paarisprogrammeerimine või ulatuslike koodi ülevaatuste tegemine<br>
+    kogu koodi üksuskatsetamine<br>
+    funktsioonide programmeerimise vältimine enne, kui neid on tegelikult vaja<br>
+    kindel juhtimisstruktuur<br>
+    koodi lihtsus ja selgus<br>
+    sage suhtlus kliendiga ja programmeerijate vahel.
+    </p>
+    <br>
+    <h2>Tegevused</h2>
+    <p>Ekstreemprogrammeerimises on neli põhitegevust, mis kuuluvad tarkvaraarenduse protsessi juurde: koodi kirjutamine, testimine, kuulamine ja disainimine.</p>
+    <h3>Koodi kirjutamine</h3>
+    <p>Ekstreemprogrammeerimise pooldajad väidavad, et ainus tõeliselt oluline süsteemi arendamise protsessi saadus on kood – tarkvara juhised, mida arvuti saab interpreteerida.
+         Ilma koodita pole ka töötavat tulemust. Koodi kirjutamist saab kasutada ka selleks, et jõuda sobivaima lahenduseni. Koodi kirjutamine võib aidata vahetada mõtteid programmeerimise probleemide kohta.
+         Programmeerija, kes tegeleb keeruka programmeerimisprobleemiga või kellel on raskusi lahenduse seletamisega kaasprogrammeerijatele, võib seda kirjutada lihtsustatult ning kasutada seda koodi näitamaks,
+         mida ta mõtleb. Kood, ütlevad selle seisukoha pooldajad, on alati selge ja lühike ning seda ei saa tõlgendada mitmel viisil.
+         Teistel programmeerijatel on võimalik anda tagasisidet koodile samuti koodi kirjutades.
+    </p>
+    <h3>Testimine</h3>
+    <p>Ekstreemprogrammeerimise lähenemisviis seisneb selles, et kui vähene testimine võib kõrvaldada mõned vead, siis palju testides võib kõrvaldada kõvasti rohkem vigu.
+         Üksustestid teevad kindlaks, kas antud funktsioon töötab nii nagu mõeldud. Programmeerijad kirjutavad võimalikult palju automatiseeritud teste, mis võimaldavad koodis olevaid vigu päevavalgele tuua.
+         Kui kõik testid jooksevad edukalt, siis on koodi kirjutamine lõpule viidud. Igat kirjutatud koodiosa testitakse enne järgmiste funktsioonide juurde liikumist.
+         Kasutuselevõtu testid kontrollivad, kas nõuded, nii nagu programmeerijad neist aru on saanud, vastavad kliendi tegelikele vajadustele.
+    </p>
+    <h3>Kuulamine</h3>
+    <p>Programmeerijad peavad kuulama, mida klient soovib, et süsteem teeks seda, mida äriloogika nõuab. Oluline on mõista kliendi vajadusi piisavalt hästi,
+         et osata anda talle tagasisidet probleemi lahendamise tehniliste aspektide kohta. Ekstreemprogrammeerimises rakendatavat kliendi ja programmeerija vahelist suhtlust nimetatakse plaanimismänguks.
+    </p>
+    <h3>Disainimine</h3>
+    <p>Lihtsustatult vaadates võib öelda, et süsteemiarendus ei vaja rohkemat kui koodi kirjutamist, testimist ja kuulamist. Kui need tegevused on edukalt läbi viidud, peaks süsteem töötama.
+         Praktikas see siiski nii lihtne ei ole. Disainimiseta võib saada palju tehtud, kuid ühel hetkel jäädakse jänni. Süsteem muutub liiga keeruliseks ning süsteemi sees olevad sõltuvused ei ole enam nii selged.
+         Seda on võimalik vältida, luues disaini struktuuri, mis organiseerib süsteemis olevat loogikat. Hea disain väldib paljusid süsteemis esinevaid sõltuvusi:
+         see tähendab, et süsteemi ühe osa muutmine ei mõjuta enam teisi osasid.
+    </p>
+    <br>
+    <h2>Põhimõtted</h2>
+    <p>Ekstreemprogrammeerimine püüab vähendada muudatuste maksumust kasutades mitu väikset arendustsükleid ühe suurema asemel. Sellises metoodikas muutused on loomulik ja soovitud osa arendusprojektides
+         ja neid tuleb planeerida ja mitte vältida. Ekstreemprogrammeerimine lisab agiilsele projektijutimisele ka mitu põhiväärtusi, printsiipe ja tegutsemisviisi.
+    </p>
+    <h3>Tagasiside</h3>
+    <p>Ekstreemprogrammeerimise seisukohalt tagasiside on kõige kasulikum, kui see on sage ja kohene. Metoodika rõhutab, et õppimiseks ja muudatuste tegemiseks on vajalik minimaalne viivitus tegevuse ja tagasiside vahel.
+         Erinevalt traditsioonilisest arendusest, suhtlemine kliendi ja tootja vahel toimub palju sagemini. Kliendil on selge arusammine süsteemist ning ta saab ise anda tagasisidet ja vajadusel juhtida arendust.
+         Sage tagasiside annab kliendile võimalust kiiremini märgata, kui arendaja on valesti disainist aru saanud ja seetõttu arendaja saab kergemini vead parandada.<br>
+         Ühiktestid on suur osa kiire tagasiside printsiibist. Nad annavad otsene tagasiside koodi kirjutamisel muutuste peale. Lisaks sellele, ühiktestid peavad kontrollima mitte ainult seda koodi,
+         mida programmeerija on kirjutanud, vaid terve projekti, kasutades automatiseeritud protsessi, mida on võimalik käivitada ühe käsuga. Sellisel juhul, kui arendaja muudab midagi projektis,
+         mis põhjustab veat teises projekti osas, automaatiseeritud testimine avaldab seda. Tavalise arenduse metoodikas sellise testimise puudumine põhjustaks seda, et ühe vigane koodi muutus oleks peidetud
+         kuni toimuks integreerimistestimine või isegi tootmisel. Sellisel juhul oleks keeruline leida seda muutust paljude teiste muutuste seas.
+    </p>
+    <h3>Lihtsus</h3>
+    <p>Iga problebleemi tuleb käsitleda nii nagu tema lahendus oleks "ekstreemselt lihtne". Traditsiooniline arendusmetoodika nõuab tuleviku planeerimist ja kirjutada koodi korduskasutamiseks.
+         Ekstreemprogrammeerimine lükab sellised ideed tagasi. Ekstreemprogrammeerimise pooldajad väidavad, et suurte muudatuste tegemine ühe korraga ei ole mõistlik ega kasulik. XP kasutab lisanduvaid muudatusi.
+         Näiteks süsteem uuendub iga kolme nädala tagant. Väiksed sammudega on arendus kliendi suurema kontrolli all.
+    </p>
+    <br>
     <br>
     <h2>Kasutatud allikad</h2>
     <a href="https://et.wikipedia.org/wiki/Ekstreemprogrammeerimine">Ekstreemprogrammeerimine</a>

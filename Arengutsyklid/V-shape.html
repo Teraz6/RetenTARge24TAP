@@ -14,6 +14,144 @@
          analüüsist kuni projekteerimine, juurutamise, testimise ja hoolduseni 
     </p>
     <br>
+    <h2>Disain</h2>
+    <p><b>Nõuete kogumine ja analüüs</b> : V-mudeli esimene faas on nõuete kogumise ja analüüsi faas, kus kogutakse kokku ja analüüsitakse kliendi nõuded tarkvarale, et määrata kindlaks projekti ulatus.<br>
+        <b>Disain</b>: Disainifaasis töötatakse välja tarkvara arhitektuur ja disain, sealhulgas kõrgetasemeline disain ja detailne disain.<br>
+        <b>Rakendamine</b>: juurutamise faasis ehitatakse tarkvara disainist lähtuvalt.<br>
+        <b>Testimine</b>: Testimise etapis testitakse tarkvara, et see vastaks kliendi nõudmistele ja oleks kvaliteetne.<br>
+        <b>Juurutamine</b>: juurutamisetapis võetakse tarkvara kasutusele ja võetakse kasutusele.<br>
+        <b>Hooldus</b>: hooldusfaasis hooldatakse tarkvara tagamaks, et see vastaks jätkuvalt kliendi vajadustele ja ootustele.<br>
+        <b>V-mudelit kasutatakse sageli ohutuses</b>: kriitilistes süsteemides, nagu lennundus- ja kaitsesüsteemid, kuna see paneb rõhku põhjalikule testimisele ja suudab selgelt määratleda tarkvaraarenduse protsessi etapid.
+    </p>
+    <img src="../Pildid/V-shape.png" height="400" widht="300">
+    <br>
+    <h3>Kontrollimis etapid</h3>
+    <p>See hõlmab staatilise analüüsi tehnikat (ülevaatust), mis tehakse ilma koodi käivitamata. See on tootearenduse etapi hindamisprotsess, et teha kindlaks, kas kindlaksmääratud nõuded on täidetud.
+        <h4>Arinõuete analüüs</h4>
+        See on esimene samm arendustsükli määramisel, kus tootevajadust tuleb kliendi vaatenurgast ravida. Nendes faasides on vajalik kliendiga nõuetekohane suhtlemine, et mõista klientide nõudmisi.
+         Need on väga olulised tegevused, millega tuleb korralikult tegeleda, kuna enamasti ei tea kliendid täpselt, mida nad tahavad, ega ole selles sel hetkel kindlad,
+         siis kasutame vastuvõtutesti projekteerimise planeerimist, mis tehakse äritegevuse aja nõue seda kasutatakse vastuvõtutestide sisendina.
+        <h4>Süsteemi disain</h4>
+        Süsteemi projekteerimine algab siis, kui toote nõuded on üldiselt selged ja seejärel on vaja süsteem täielikult kujundada. See arusaam valmib tootearendusprotsessi alguses.
+         Need on kasulikud testjuhtumite edaspidiseks täitmiseks.
+        <h4>Arhitektuurne disain</h4>
+        Selles etapis mõistetakse ja kujundatakse arhitektuursed spetsifikatsioonid. Tavaliselt pakutakse välja mitu tehnilist lähenemist ja lõplik valik tehakse nii tehnilist kui ka rahalist tasuvust kaaludes.
+         Süsteemi arhitektuur on jagatud mooduliteks, millest igaüks täidab oma funktsiooni. Selle teine nimi on kõrgetasemeline disain (HLD).
+         Siinkohal on sisemoodulite ja välissüsteemide vaheline andmevahetus ja suhtlus hästi mõistetav ja määratletud. Selles etapis saab esitatud teabe abil luua ja dokumenteerida integratsiooniteste.
+        <h4>Mooduli disain</h4>
+        See etapp, mida tuntakse madala taseme disainina (LLD), määrab iga süsteemimooduli tervikliku sisekujunduse. Disaini ja muude väliste süsteemide ning süsteemiarhitektuuri muude moodulite ühilduvus on ülioluline.
+         Üksusetestid on iga arendusprotsessi oluline komponent, kuna need aitavad tuvastada ja kõrvaldada enamiku vigu ja puudusi varajases staadiumis.
+         Sisemooduli kujunduse põhjal saab nüüd need ühikutestid luua.
+        <h4>Kodeerimis faas</h4>
+        Kodeerimise etapp hõlmab koodi kirjutamist süsteemimoodulitele, mis loodi projekteerimisetapis. Kõige sobivama programmeerimiskeele määramiseks kasutatakse süsteemi- ja arhitektuurinõudeid.Kodeerimise
+         läbiviimisel järgitakse kodeerimise standardeid ja põhimõtteid. Enne lõpliku järgu hoidlasse kontrollimist läbib kood mitmeid koodiülevaatusi ja optimeeritakse optimaalseks jõudluseks.
+    </p>
+    <br>
+    <h3>Valideerimise etapid</h3>
+    <p>See hõlmab dünaamilise analüüsi tehnikaid (funktsionaalseid ja mittefunktsionaalseid) ja testimist, mida tehakse koodi täitmisega. Valideerimine on tarkvara hindamise protsess pärast arendusfaasi lõppu,
+         et teha kindlaks, kas tarkvara vastab kliendi ootustele ja nõuetele. Seega sisaldab V-mudel ühel pool kontrollifaase, teisel pool on valideerimisfaasid.
+         Kontrollimise ja valideerimise faasid ühendatakse V-kujuliselt kodeerimisfaasiga. Seega nimetatakse seda V-mudeliks. V-mudelil on mitu valideerimisetappi.
+        <h4>Üksuse testimine</h4>
+        Üksuse testimise plaanid töötatakse välja mooduli kavandamise etapis. Need üksuse testimisplaanid täidetakse koodi või üksuse taseme vigade kõrvaldamiseks.
+        <h4>Integratsiooni testimine</h4>
+        Pärast üksuse testimise lõpetamist viiakse läbi integratsioonitest. Integratsioonitestimisel integreeritakse moodulid ja testitakse süsteemi.
+         Integratsiooni testimine viiakse läbi Arhitektuuri projekteerimise etapis. See test kontrollib moodulite omavahelist suhtlust.
+        <h4>Süsteemi testimine</h4>
+        Süsteemi testimine testib kogu rakendust koos selle funktsionaalsuse, vastastikuse sõltuvuse ja suhtlusega. See testib arendatud rakenduse funktsionaalseid ja mittefunktsionaalseid nõudeid
+        <h4>Kasutaja aktsepteerimise testimine (UAT)</h4>
+        UAT teostatakse kasutajakeskkonnas, mis sarnaneb tootmiskeskkonnaga. UAT kontrollib, et tarnitud süsteem vastab kasutaja nõudmistele ja süsteem on reaalses maailmas kasutamiseks valmis.
+    </p>
+    <br>
+    <h3>Projekteerimise etapp</h3>
+    <p><h4>Nõuete analüüs</h4>
+        See etapp sisaldab üksikasjalikku suhtlust kliendiga, et mõista tema nõudeid ja ootusi. Seda etappi nimetatakse nõuete kogumiseks.
+        <h4>Süsteemi projekteerimine</h4>
+        See etapp sisaldab süsteemi ülesehitust ning täielikku riistvara ja sideseadistust toote arendamiseks.
+        <h4>Arhitektuurne projekteerimine</h4>
+        Süsteemi disain jaotatakse edasi mooduliteks, millel on erinevad funktsioonid. Andmeedastus ja suhtlus sisemoodulite vahel ja välismaailmaga (muud süsteemid) on selgelt arusaadavad.
+        <h4>Mooduli disain</h4>
+        Selles faasis laguneb süsteem väikesteks mooduliteks. Moodulite detailne disain on täpsustatud, tuntud ka kui madala taseme projekt (LLD).
+    </p>
+    <br>
+    <h3>Testimise etapid</h3>
+    <p><h4>Üksuse testimine</h4>
+        Ühikutestimise plaanid töötatakse välja mooduli kavandamise etapis. Need üksuse testimisplaanid täidetakse koodi või üksuse tasemel esinevate vigade kõrvaldamiseks.
+        <h4>Integratsiooni testimine</h4>
+        Pärast üksuse testimise lõpetamist viiakse läbi integratsioonitestimine. Integratsioonitestimisel integreeritakse moodulid ja testitakse süsteemi.
+         Integratsiooni testimine viiakse läbi Arhitektuuri projekteerimise etapis. See test kontrollib moodulite omavahelist suhtlust.
+        <h4>Süsteemi testimine</h4>
+        Süsteemi testimine testib kogu rakendust koos selle funktsionaalsuse, vastastikuse sõltuvuse ja suhtlusega. See testib arendatud rakenduse funktsionaalseid ja mittefunktsionaalseid nõudeid.
+        <h4>Kasutaja aktsepteerimise testimine (UAT)</h4>
+        UAT viiakse läbi kasutajakeskkonnas, mis sarnaneb tootmiskeskkonnaga. UAT kontrollib, et tarnitud süsteem vastab kasutaja nõudmistele ja süsteem on reaalses maailmas kasutamiseks valmis.
+    </p>
+    <br>
+    <br>
+    <h2>V-mudeli tähtsus</h2>
+    <p><h3>Varajane defektide tuvastamine</h3>
+        Lisades verifitseerimis- ja valideerimisülesanded arendusprotsessi igasse etappi, julgustab V-mudel varajast testimist. See vähendab kulusid ja jõupingutusi,
+         mis on vajalikud probleemide lahendamiseks hilisemas arendustsüklis, aidates tõrkeid varakult avastada ja lahendada.
+        <h3>Arendus- ja testimisfaaside määramine</h3>
+        V-mudel sisaldab testimisetappi, mis vastab igale arendusprotsessi etapile. Tagades, et testimis- ja arendusprotsessid on selgelt kaardistatud,
+         soodustab see selge kaardistamine metoodilist ja korrapärast lähenemist tarkvaratehnikale.
+        <h3>Hoiab ära <i>Big Bang</i> testimise</h3>
+        Traditsioonilistes arendusmudelites tehakse testimine sageli arendustsükli lõpus, mille tulemuseks on <i>Big Bang</i> lähenemine, kus kõik testimistoimingud on keskendunud korraga.
+         Integreerides testimistegevused arendusprotsessi ning soodustades progressiivsemat ja reguleeritumat testimisviisi, hoiab V-mudel seda ära.
+        <h3>Parandab koostööd</h3>
+        Igal tasandil edendab V-mudel testimis- ja arendusmeeskondade vahelist koostööd. Selle koostöö kaudu mõistetakse paremini projekti nõudeid,
+         disainivalikuid ja testimismetoodikaid, mis parandab arendusprotsessi tõhusust ja tõhusust.
+        <h3>Täiustatud kvaliteedi tagamine</h3>
+        Üldist kvaliteedi tagamist täiustab V-mudel, mis hõlmab testimistoiminguid igal tasandil. Enne kui programm jõuab juurutamise viimasesse etappi,
+         veendub see, et see vastab nõuetele ning läbib range valideerimis- ja kontrolliprotsessi.
+    </p>
+    <br>
+    <br>
+    <h2>V-mudeli põhimõtted</h2>
+    <p><b>Suurest väikeseni</b>: V-mudelis testitakse hierarhilises perspektiivis, näiteks projektimeeskonna tuvastatud nõuded, projekti kõrgetasemelise disaini ja üksikasjaliku disaini faasid.
+         Kui kõik need etapid on nõuete täitmisel lõpule viidud, muutuvad need defineerivad üha täpsemaks ja üksikasjalikumaks.<br>
+        <b>Andmete/protsesside terviklikkus</b>: see põhimõte sätestab, et iga projekti edukaks kavandamiseks on vaja nii andmete kui protsesside kaasamist ja sidusust.
+         Protsessi elemendid tuleb tuvastada iga nõude juures.<br>
+        <b>Skaleeritavus</b>: see põhimõte sätestab, et V-mudeli kontseptsioonil on paindlikkus, mis sobib iga IT-projektiga, olenemata selle suurusest, keerukusest või kestusest.<br>
+        <b>Ristviide</b>: otsest seost nõuete ja vastava testimistegevuse vahel nimetatakse ristviitamiseks.
+    </p>
+    <br>
+    <br>
+    <h2>Millal V-mudelit kasutada?</h2>
+    <p><b>Nõuete jälgitavus</b>: V-mudel osutub kasulikuks olukordades, kus on hädavajalik luua täpne jälgitavus nõuete ja nendega seotud katsejuhtumite vahel.<br>
+        <b>Komplekssed projektid</b>: V-mudel pakub metoodilist viisi testimistegevuste haldamiseks ning integratsiooni- ja liideseprobleemidega seotud riskide vähendamiseks projektide puhul, mille keerukus ja vastastikune sõltuvus süsteemi komponentide vahel on kõrge.<br>
+        <b>Waterfall-like projektid</b>: kuna V-mudel pakub ligipääsetavat struktuuri testimistegevuste korraldamiseks, läbiviimiseks ja jälgimiseks igal arendustasemel, sobib see projektidele, mis kasutavad arendusele järjestikust lähenemist, sarnaselt kose mudeliga.<br>
+        <b>Ohutuskriitilised süsteemid</b>: neid süsteeme kasutatakse kosmose-, auto- ja tervishoiutööstuses. Nad panevad suurt rõhku jäikadele verifitseerimis- ja valideerimisprotseduuridele, mis aitavad tagada oluliste süsteeminõuete täitmise ning võimalike riskide leidmise ja kõrvaldamise arendusprotsessi varajases staadiumis.
+    </p>
+    <br>
+    <br>
+    <h2>Plussid ja miinused</h2>
+    <table border="2" style="margin:auto">
+        <tr>
+            <th>Plussid</th>
+            <th>Miinused</th>
+        </tr>
+        <tr>
+            <td>See on väga distsiplineeritud mudel ja faasid viiakse läbi ükshaaval</td>
+            <td>Suur risk ja ebakindlus</td>
+        </tr>
+        <tr>
+            <td>V-mudelit kasutatakse väikeste projektide jaoks, kus projekti nõuded on selged</td>
+            <td>See ei sobi keerukate ja objektorienteeritud projektide jaoks</td>
+        </tr>
+        <tr>
+            <td>Lihtne ja hõlpsasti mõistetav ja kasutatav</td>
+            <td>See ei sobi projektidele, mille nõuded pole selged ja sisaldavad suurt muutumisriski</td>
+        </tr>
+        <tr>
+            <td>See mudel keskendub verifitseerimis- ja valideerimistoimingutele elutsükli varases staadiumis,<br>suurendades seeläbi veavaba ja kvaliteetse toote loomise tõenäosust.</td>
+            <td>Paindmatus: V-mudel on lineaarne ja järjestikune mudel,<br>mis võib muuta muutuvate nõuete või ootamatute sündmustega kohanemise keeruliseks.</td>
+        </tr>
+        <tr>
+            <td>Täiustatud jälgitavus: V-mudel pakub selget seost nõuete ja lõpptoote vahel,<br>muutes tarkvara muudatuste jälgimise ja haldamise lihtsamaks.</td>
+            <td>Aeganõudev: V-mudel võib olla aeganõudev, kuna see nõuab palju dokumentatsiooni ja testimist.</td>
+        </tr>
+    </table>
+    <br>
+    <br>
     <h2>Kasutatud allikad</h2>
     <a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/">SDLC V-Model-Software Engineering</a>
 </body>
