@@ -33,7 +33,25 @@ p {
 text-align: center;
 font-size: 18px;
 }
+/* See kood eemaldab joone linkidel ja värvi */
 
+a:link {
+	color: #0579fd;
+	text-decoration: none;
+  }
+  
+  /* külastatud link */
+  a:visited {
+	color: #0579fd;
+	text-decoration: none;
+  }
+  
+  /* Hiirega lingi peal hõljumine */
+  a:hover {
+	color: #ff02dd;
+	text-decoration: none;
+  }
+  
 /* Tabeliga seotud kood */
 th {
 	background-color:#000000 ;
