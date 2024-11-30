@@ -33,25 +33,31 @@ p {
 text-align: center;
 font-size: 18px;
 }
-/* See kood eemaldab joone linkidel ja värvi */
+/* See kood eemaldab joone linkidel ja värvi.
+ Lisasin "a" ette ".link", et eraldada see navigatsiooni linkidest.
+ Praegu puudub navigatsiooni riba linkidel .class */
 
-a:link {
+a.link:link {
 	color: #0579fd;
 	text-decoration: none;
   }
   
-  /* külastatud link */
-  a:visited {
+  /*külastatud link*/
+  a.link:visited {
 	color: #0579fd;
 	text-decoration: none;
   }
   
-  /* Hiirega lingi peal hõljumine */
-  a:hover {
+   /*-Hiirega lingi peal hõljumine */
+  a.link:hover {
 	color: #ff02dd;
 	text-decoration: none;
   }
-  
+
+/* Listidega seotud kood lisada siia*/
+
+
+
 /* Tabeliga seotud kood */
 th {
 	background-color:#000000 ;
@@ -73,6 +79,7 @@ table, th, td {
 	border-collapse: collapse;
 }
 
+
 /* Lehe Layout */
 .header {
 	background-color: #009286;
@@ -81,31 +88,14 @@ table, th, td {
 	color: white;
 }
 
+
+/* Navigeerimisriba kood */
 .topnav {
 	overflow: hidden;
 	background-color: #009286;
-}
-/* Lükkab dropdown'i paremalt vasakule, mitte ülevalt alla. Kui soovid, et dropdown töötaks navigeerimisribal siis ära võta seda koodi komentaarist välja.
-.topnav a {
-	float: left;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
+ }
 
-.topnav a:hover {
-	background-color: #00c4b3;
-	color: white;
-}
-*/
-/* Dropdown menu
-!!!! SEE KOOD MÕJUTAB KÕIKI LISTE SELLEL LEHEKÜLJEL.
-!!!! SEDA MEETODIT EI SAA KASUTADA LEHTEDEL, MIS SISALDAB LISTE.
-!!!! TEISTE LEHTEDE MENÜÜ JAOKS ON VAJA MUUD MEETODIT.
- */
-ul {
+.topnav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -113,11 +103,11 @@ ul {
 	background-color: #333;
 }
 
-li {
+.topnav li {
 	float: left;
 }
 
-li a, .dropbtn {
+.topnav li a, .dropbtn {
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -125,15 +115,15 @@ li a, .dropbtn {
 	text-decoration: none;
 }
  
-li a:hover, .dropdown:hover .dropbtn {
+.topnav li a:hover, .dropdown:hover .dropbtn {
 	background-color: #00c4b3;
 }
 
-li.dropdown {
+.topnav li.dropdown {
 	display: inline-block;
 }
 
-.dropdown-content {
+.topnav .dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #333;
@@ -142,7 +132,7 @@ li.dropdown {
 	z-index: 1;
 }
   
-.dropdown-content a {
+.topnav .dropdown-content a {
 	color: #ffffff;
 	padding: 12px 16px;
 	text-decoration: none;
@@ -150,8 +140,10 @@ li.dropdown {
 	text-align: left;
 }
   
-.dropdown-content a:hover {background-color: #00c4b3;}
+.topnav .dropdown-content a:hover {background-color: #00c4b3;}
   
-.dropdown:hover .dropdown-content {
+.topnav .dropdown:hover .dropdown-content {
 	display: block;
 }
+/* Ülemine osa on nav riba jaoks. Peab kasutama classi "topnav" siis töötab */
+
