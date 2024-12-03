@@ -37,6 +37,11 @@ font-size: 18px;
  Lisasin "a" ette ".link", et eraldada see navigatsiooni linkidest.
  Praegu puudub navigatsiooni riba linkidel .class */
 
+ a.link {
+	display: block;
+	text-align: center;
+ }
+
 a.link:link {
 	color: #0579fd;
 	text-decoration: none;
@@ -54,9 +59,14 @@ a.link:link {
 	text-decoration: none;
   }
 
-/* Listidega seotud kood lisada siia*/
 
+/* Listiga seotud kood.*/
+/* Paneb listi keskele, kui saab lehe layouti valmis siis võiks need vasakule äärde tagasi minna */
 
+ul.list {
+	display: table;
+	margin: 0 auto;
+}
 
 /* Tabeliga seotud kood */
 th {
