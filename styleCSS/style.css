@@ -66,6 +66,7 @@ a.link:link {
 ul.list {
 	display: table;
 	margin: 0 auto;
+	font-size: 18px;
 }
 
 /* Tabeliga seotud kood */
@@ -157,3 +158,11 @@ table, th, td {
 }
 /* Ülemine osa on nav riba jaoks. Peab kasutama classi "topnav" siis töötab */
 
+/* tee see korda
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+	*/
