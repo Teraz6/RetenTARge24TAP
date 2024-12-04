@@ -158,11 +158,8 @@ table, th, td {
 }
 /* Ülemine osa on nav riba jaoks. Peab kasutama classi "topnav" siis töötab */
 
-/* tee see korda
+/*tee see korda */
 img.center {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	margin: auto;
 }
-	*/
