@@ -1,0 +1,28 @@
+/* Tabeliga seotud kood */
+.RA {}
+	table{
+		border: 1px solid rgb(60, 255, 46);
+		border-collapse:collapse;
+		font-size: 18px;
+	}
+
+	thead {
+		background-color:#000000 ;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	tbody {
+		border: 3px solid rgb(60, 255, 46);
+		background-color:#ff2020 ;
+		color: white;
+		font-size: 20px;
+	}
+
+	td {
+		padding: 10px;
+		text-align: center;
+	}
+
+
