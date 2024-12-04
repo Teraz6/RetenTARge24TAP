@@ -36,26 +36,57 @@ font-size: 18px;
 /* See kood eemaldab joone linkidel ja värvi.
  Lisasin "a" ette ".link", et eraldada see navigatsiooni linkidest.
  Praegu puudub navigatsiooni riba linkidel .class */
-/* Lingi teksti suurus tuleb suuremaks teha. Enamus lingid on "headingute" sees, seda see kood ei mõjuta.
-Lingid mis on ainult "<a" mõjutab see */
- a.link {
+/* Igal "Heading" lingil on enda class mis määrab neil teksti suurust
+Lingi disain (hover, visited) ei tööta headingu omadel */
+a.h1 {
 	display: block;
 	text-align: center;
+	font-size: 45px;
+}
+
+a.h2 {
+	display: block;
+	text-align: center;
+	font-size: 35px;
+}
+
+a.h3 {
+	display: block;
+	text-align: center;
+	font-size: 30px;
+}
+
+a.h4 {
+	display: block;
+	text-align: center;
+	font-size: 25px;
+}
+
+a.h5 {
+	display: block;
+	text-align: center;
+	font-size: 23px;
+}
+
+a.link {
+	display: block;
+	text-align: center;
+	font-size: 18px;
  }
 
-a.link:link {
+a:link {
 	color: #0579fd;
 	text-decoration: none;
   }
   
   /*külastatud link*/
-  a.link:visited {
+  a:visited {
 	color: #0579fd;
 	text-decoration: none;
   }
   
    /*-Hiirega lingi peal hõljumine */
-  a.link:hover {
+  a:hover {
 	color: #ff02dd;
 	text-decoration: none;
   }
