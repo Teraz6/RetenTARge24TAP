@@ -36,7 +36,8 @@ font-size: 18px;
 /* See kood eemaldab joone linkidel ja värvi.
  Lisasin "a" ette ".link", et eraldada see navigatsiooni linkidest.
  Praegu puudub navigatsiooni riba linkidel .class */
-
+/* Lingi teksti suurus tuleb suuremaks teha. Enamus lingid on "headingute" sees, seda see kood ei mõjuta.
+Lingid mis on ainult "<a" mõjutab see */
  a.link {
 	display: block;
 	text-align: center;
