@@ -36,8 +36,7 @@ font-size: 18px;
 /* See kood eemaldab joone linkidel ja värvi.
  Lisasin "a" ette ".link", et eraldada see navigatsiooni linkidest.
  Praegu puudub navigatsiooni riba linkidel .class */
-/* Igal "Heading" lingil on enda class mis määrab neil teksti suurust
-Lingi disain (hover, visited) ei tööta headingu omadel */
+
 a.h1 {
 	display: block;
 	text-align: center;
@@ -190,7 +189,7 @@ table, th, td {
 }
 /* Ülemine osa on nav riba jaoks. Peab kasutama classi "topnav" siis töötab */
 
-/*tee see korda */
+/* paneb pildi keskele */
 img.center {
 	display: block;
 	margin: auto;
