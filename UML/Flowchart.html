@@ -7,6 +7,14 @@
     <title>Flowchart</title>
 </head>
 <body>
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
     <h1>Flowchart</h1>
     <p>Vooskeemid (<i>Flowchart</i>) on lihtsad visuaalsed tööriistad, mis aitavad meil protsesse väga lihtsalt mõista ja kujutada.
          Nad kasutavad kujundeid, nagu nooled, ristkülikud ja teemandid, et näidata samme ja otsuseid selgelt.

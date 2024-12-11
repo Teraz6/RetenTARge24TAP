@@ -7,6 +7,14 @@
     <title>UML</title>
 </head>
 <body>
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
     <!--Tehke omal ainemappi UML Diagrammide jaoks eraldi saidi osa.
 
 Kirjutage sinna eraldi osa flowcharti ja ERD diagrammi kohta. (Flowcharti oleme juba kasutanud bitcoin kalkulaatori juures, ERDd veel mitte)

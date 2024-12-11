@@ -7,6 +7,14 @@
     <title>Süsteemi nõuete dokument</title>
 </head>
 <body>
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
     <h1>BITCOIN KALKULAATOR - süsteemi nõuete dokument</h1>
     <br>
     <!-- List mis tuleb CSS ilusaks muuta

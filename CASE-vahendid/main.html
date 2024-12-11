@@ -21,6 +21,14 @@ annate näite igas arendustsükli etapis ühest tööriistast mida seal kasutada
     <link rel="icon" type="image/x-icon" href="Pildid/Rlogo.png">
 </head>
 <body>
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
     <p><a href="../index.html">Esilehele</a></p>
     <h1>CASE-VAHENDID</h1>
     <br>
