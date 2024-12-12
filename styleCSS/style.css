@@ -1,7 +1,8 @@
 /* Tekstiga seotud kood */
 body {
-	background-color: #b4fff7;
+	background-color: #231f20 ;
 	font-family: "franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color:white;
 }
 
 h1 {
@@ -74,19 +75,19 @@ a.link {
  }
 
 a:link {
-	color: #0579fd;
+	color: #612124;
 	text-decoration: none;
   }
   
   /*külastatud link*/
   a:visited {
-	color: #0579fd;
+	color: #612124;
 	text-decoration: none;
   }
   
    /*-Hiirega lingi peal hõljumine */
   a:hover {
-	color: #ff02dd;
+	color: #ff000d;
 	text-decoration: none;
   }
 
@@ -124,10 +125,13 @@ table, th, td {
 
 /* Lehe Layout */
 .header {
-	background-color: #333;
+	background-color: #231f20;
 	padding: 20px;
 	text-align: center;
 	color: white;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+	border-color:#612124;
 }
 
 
@@ -142,7 +146,10 @@ table, th, td {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #231f20;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+	border-color: #612124;
 }
 
 .topnav li {
@@ -158,7 +165,7 @@ table, th, td {
 }
  
 .topnav li a:hover, .dropdown:hover .dropbtn {
-	background-color: #00c4b3;
+	background-color: #612124;
 }
 
 .topnav li.dropdown {
@@ -168,7 +175,7 @@ table, th, td {
 .topnav .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #333;
+	background-color: #231f20;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -182,7 +189,7 @@ table, th, td {
 	text-align: left;
 }
   
-.topnav .dropdown-content a:hover {background-color: #00c4b3;}
+.topnav .dropdown-content a:hover {background-color: #612124;}
   
 .topnav .dropdown:hover .dropdown-content {
 	display: block;
@@ -206,17 +213,17 @@ img.center {
   }
   
   /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
+  /* Sidebar/right column */
   .side {
 	flex: 30%;
-	background-color: #b4fff7;
+	background-color: #b4fff800;
 	padding: 20px;
   }
   
   /* Main column */
   .main {
 	flex: 70%;
-	background-color: #b4fff7;
+	background-color: #b4fff800;
 	padding: 20px;
   }
   
