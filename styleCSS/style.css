@@ -103,7 +103,7 @@ ul.list {
 
 /* Tabeliga seotud kood */
 th {
-	background-color:#000000 ;
+	background-color:#612124 ;
 	color: white;
 	font-size: 20px;
 }
@@ -118,7 +118,7 @@ th, td {
 }
 
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid #612124;
 	border-collapse: collapse;
 }
 
@@ -195,6 +195,15 @@ table, th, td {
 	display: block;
 }
 /* Ülemine osa on nav riba jaoks. Peab kasutama classi "topnav" siis töötab */
+
+  /* Tektsi ala. Tõmbab ääri kokku */
+  .textarea {
+	background-color: #b4fff800;
+	padding-top: 20px;
+	padding-left: 140px;
+	padding-right: 140px;
+	padding-bottom: 20px;
+  }
 
 /* paneb pildi keskele */
 img.center {
