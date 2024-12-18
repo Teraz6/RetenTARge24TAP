@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Libre x Cyber security</title>
+    <link rel="stylesheet" href="../styleCSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Project Libre x Cyber security</h1>
+    </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+    <!-- Teksti algus -->
+    <div class="textarea">
+    <p>Tegemist on projektiga, mis teostab digiturbe veebipoele. Projektis on välja toodud ülesanded, ressursside kulu ja töötajad.</p>
+    <p>Allpool on lingid, mis viivad projektiga seotud raportidele</p>
+    <h2><a href="Muud failid/ProjectDetails.html">Projekti detailid</a></h2>
+    <h2><a href="Muud failid/WhoDoesWhat.html">Kes teeb mida?</a></h2>
+    <p>Samuti saab projekti faili allalaadida, mis on tehtud Project Libre rakendusega.</p>
+    <!-- Allalaadimise link-->
+    <h3><a href="Muud failid/Turvasüsteemi arendamine veebipoele.pod" download>Lae alla projekti fail</a></h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Projektiga seotud inimesed</h2>
+    <h4>Manager - Reten</h4>
+    <h4>Turvaspetsialist - Anti <i>"ANTI-virus"</i></h4>
+    <h4>Vanemarendaja - Aare</h4>
+    <h4>Arendaja - Vitali</h4>
+    <h4>Arendaja - Marko</h4>
+    <h4>Testija - Tiit</h4>
+    <h4>Testija - Teet</h4>
+    <h4>Süsteemihaldur - Valdur</h4>
+    <h4>Süsteemihaldur - Jüri</h4>
+    <h4>Süsteemihaldur - Marek</h4>
+    <h4>Süsteemihaldur - Veljo</h4>
+    <br>
+    <br>
+    <br>
+    <h2>Suured tänud</h2>
+    <h4>Koolitaja - Anastašiia</h4>
+    <h3><img src="../Pildid/Redbull.png" width="200px" height="200px"></h3>
+    <p>Ilma <i>Red Bullita</i> ei peaks meie süsteemihaldurit vastu seda rasket 24 tunnist vahetust.</p>
+    <br>
+    <br>
+    </div>
+</body>
+</html>
