@@ -211,6 +211,13 @@ img.center {
 	margin: auto;
 }
 
+/* Inverteerib pildi värvib */
+img.center.invert {
+	display: block;
+	margin: auto;
+	filter: invert(100%);
+}
+
 /* Column container */
 * {
 	box-sizing: border-box;
