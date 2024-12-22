@@ -137,17 +137,15 @@ table, th, td {
 
 /* Navigeerimisriba kood */
 .topnav {
-	/*overflow: hidden;*/
+	overflow: hidden;
 	background-color: #231f20;
-	position: sticky;
-	top: 0;
  }
 
 .topnav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	background-color: #231f20;
 	border-top: solid 1px;
 	border-bottom: solid 1px;
@@ -200,25 +198,32 @@ table, th, td {
 }
 /* Ülemine osa on nav riba jaoks. Peab kasutama classi "topnav" siis töötab */
 
-  /* Tektsi ala. Tõmbab ääri kokku */
-  .textarea {
-	background-color: #b4fff800;
-	padding-top: 20px;
-	padding-left: 140px;
-	padding-right: 140px;
-	padding-bottom: 20px;
-  }
-
+  /* Tektsi ala. Tõmbab ääri kokku.
+  Kehtib ekraanidele, mis on laiemad kui 900px. */
+@media screen and (min-width: 900px) {
+	.textarea {
+		background-color: #b4fff800;
+		padding-top: 20px;
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-bottom: 20px;
+	}
+}
 /* paneb pildi keskele */
 img.center {
 	display: block;
 	margin: auto;
 }
 
-/* Inverteerib pildi värvib */
+/* Inverteerib pildi värvib ja paneb pildi keskele */
 img.center.invert {
 	display: block;
 	margin: auto;
+	filter: invert(100%);
+}
+
+/* inverteerib pildi värvid*/
+img.invert {
 	filter: invert(100%);
 }
 
@@ -253,3 +258,32 @@ img.center.invert {
 	  flex-direction: column;
 	}
   }
+
+button {
+	display: block;
+	margin: auto;
+	background-color: #00000000; /* transparent background */
+	color:#612124;
+	border: solid 2px;
+	border-color: #612124;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color:#00000049;
+	color:#ff000d;
+	border-color:#ff000d;
+}
+
+.website-counter {
+	color: white;
+	font-weight: 700;
+	font-size: 35px;
+	margin-top: 10px;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
