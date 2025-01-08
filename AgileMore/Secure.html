@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styleCSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure by Design</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Secure by Design</h1>
+        <h3>Disainiliselt turvaline</h3>
+    </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+    <div class="textarea">
+    <p>Disainiliselt turvaline tähendab, et tarkvara rakendused ja võimekus on disainitud turvaliselt. Alternatiivseid turbestrateegiaid, taktikaid ja mustreid arvestatakse tarkvara kavandamise alguses, parimad valitakse välja ning kasutatakse arendajate peamiste põhimõtetena. 
+        Samuti kasutadakse strateegilisi disainimustreid, mis on turvalisusele suurendamiseks, isegi kui need polnud algselt välja töötatud. 
+        Turvalisus on suure tähelepanu all igas kihis ning see algab tugevast arhitektuurilisest disainist. Rakenduse turvalisuse tagamiseks ei ole oluline mitte ainult kavandada robustne turbearhitektuur, vaid ka tarkvaraarenduse uuendatud turbestrateegiate, -taktikate ja -mustrite kaardistamine, et säilitada turvalisuse püsivus.
+    </p>
+    <!--rakenduse näide-->
+    <br>
+    <img class="center" src="../Pildid/SecurePic.png" width="600px" height="500px">
+    <br>
+    <br>
+    <table style="margin:auto">
+        <tr>
+            <th>Plussid</th>
+            <th>Miinused</th>
+        </tr>
+        <tr>
+            <td>Kindlus sisaldub võimekuse protsessis, käsitledes seeläbi uusi ohte korrapärasemalt.</td>
+            <td>Keerukus ja ressursimahukas, sest iga kiht vajab põhjaliku investeerimist, mida ei saa hiljem juurde lisada</td>
+        </tr>
+        <tr>
+            <td>See suurendab turvateadlikkust, kaasates palju rohkem asjaosalisi, pakkudes rohkem tähelepanu võimele, mille tulemusel tuvastatakse rohkem haavatavusi.</td>
+            <td>Seadused muutuvad turvalisuse poole pealt üha rangemaks ja rangemaks</td>
+        </tr>
+        <tr>
+            <td>See võimaldab võimetel kauem kasutuses olla, vähendades uute projektide vajadust (säästades väärtuslikke ressursse).</td>
+            <td>Sellise raamistiku rakendamine nõuab suuremahulist muudatuste juhtimist ja laiaulatuslikku suhtlusvõrku.</td>
+        </tr>
+        <tr>
+            <td>Usaldus ja enesekindlus tänapäevaste ohtudega toimetulla suureneb.</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Kasutatud allikad</h2>   
+    <a class="link" href="https://en.wikipedia.org/wiki/Secure_by_design">Secure by design</a>
+    <a class="link" href="https://blog.cdsds.uk/mod-secure-by-design">MOD Secure by Design</a>
+    <a class="link" href="https://www.isms.online/cyber-security/the-ongoing-struggle-for-security-by-design/">The Ongoing Struggle for Security by Design</a>
+    <a class="link" href="https://www.ebeni.com/will-it-work-exploring-the-benefits-and-challenges-of-implementing-secure-by-design/">Will it Work? Exploring the Benefits and Challenges of Implementing Secure by Design</a>
+    <br>
+    <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styleCSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behavior-Driven Development (BDD)</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Behavior-Driven Development (BDD)</h1>
+        <h3>Käitumisel põhinev arendus</h3>
+    </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+    <div class="textarea">
+    <p>Tegemist on tarkvaraarendus meetodiga, mis on välja arenenud 
+    <a style="text-decoration: underline; color:white" href="TestDriven.html">testimisel põhinevast arendusest</a>.
+     Käitumisel põhinev arendus kombineerib testimisel põhineva arenduse üldiseid tehnikaid ja põhimõtted. Selle eesmärk
+     on pakkuda arendustiimile ja juhtivtiimile jagatud tööriista tarkvara arendamisel.<br>
+    Enim kasutatud tööriist BDD mudelis on 
+    <!-- Link ja pilt Cucumber leheküljele-->
+    <a style="text-decoration: underline; color:white" href="https://cucumber.io/">Cucumber</a>
+    <img src="../Pildid/CucumberLogo.png" width="20px" height="20px">
+    </p>
+    <img class="center" src="../Pildid/BDD-Development-Process.png" width="830px" height="589px">
+    <br>
+    <br>
+    <!-- Tabel head ja vead -->
+    <table style="margin:auto">
+        <tr>
+            <th>Plussid</th>
+            <th>Miinused</th>
+        </tr>
+        <tr>
+            <td><b>Täiustatud koostöö:</b> Edendab koostööd kliendi ja arendajate vahel, kasutades selleks ühist keelt.</td>
+            <td><b>Aeganõudev protsess:</b> Funktsioonifailide kirjutamine, stsenaariumite määratlemine ja sammude määratluste säilitamine võib olla aeganõudev, eriti suurte ja keeruliste projektide puhul.</td>
+        </tr>
+        <tr>
+            <td><b>Selgemad nõuded:</b> Nõuded kirjutatakse lihtsas keeles, kasutades Gherkini süntaksit.</td>
+            <td><b>Kliendi koostööle sõltuv:</b> Tugineb suurel määral koostööle, kliendi aktiivse osaluse puudumisel võib takistada arendusmudeli tõhusust.</td>
+        </tr>
+        <tr>
+            <td><b>Probleemide varajane tuvastamine:</b> Julgustab enne juurutamist teste kirjutama. Võimaldab tuvastada probleemid varajases staadiumis.</td>
+            <td><b>Raskused keerulistes stsenaariumites:</b> Võib tekkida raskusi väga keeruliste juhtumutega, mis põhjustab testimise automatiseerimise ebaselgust või ebatõhusust.</td>
+        </tr>
+        <tr>
+            <td><b>Täiustatud dokumentatsioon:</b> Pidev testimine täiustab ja hoiab ajakohasena dokumentatsiooni.</td>
+            <td><b>Üldised hoolduskulud:</b> Projekti arenedes võib olemasolevate failide, sammude määratluste hooldamine ja värskendamine, muutuda keeruliseks ja ressursimahukaks.</td>
+        </tr>
+        <tr>
+            <td><b>Parem koodikvaliteet:</b> Julgustab kirjutama testitavat ja modulaarset koodi, mis järgib stsenaariumites kirjeldatud käitumist.</td>
+            <td><b>Tööriistade piirang:</b> Tõhusus sõltub suuresti tööriistade ja raamistike saadavusest ja sobivusest. Piiratud tööriistavalikud või ühilduvusprobleemid süsteemidega võivad takistada kasutuselevõttu ja rakendamist.</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <h2>Kasutatud allikad</h2>
+    <a class="link" href="https://et.wikipedia.org/wiki/K%C3%A4itumisel_p%C3%B5hinev_arendus">Käitumisel põhinev arendus</a>
+    <a class="link" href="https://www.geeksforgeeks.org/behavioral-driven-development-bdd-in-software-engineering/">What is Behavior-Driven Development (BDD)</a>
+    <br>
+    </div>
+</body>
+</html>

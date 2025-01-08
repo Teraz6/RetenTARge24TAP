@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styleCSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design-Driven Development</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Design-Driven Development</h1>
+        <h3>Disainil põhinev arendus</h3>
+    </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+    <div class="textarea">
+    <p>Disainil põhinev arendus prioritiseerib kasutajakogemust, tagades toote sobivuse kasutajatele, vähendades muudatusi ja kiirendades rakenduse turule jõudmis aega.
+        Rakeduse disain ja funktsionaalsus vastavad kasutaja tegelikele vajadustele, mitte eeldavatele soovidele.
+        <!--Vajab rakenduse näidet-->
+    </p>
+    <img class="center" src="../Pildid/DesignDrivenPic.png" width="770px" height="500px">
+    <br>
+    <br>
+    <!-- Tabel -->
+    <table style="margin:auto">
+        <tr>
+            <th>Plussid</th>
+            <th>Miinused</th>
+        </tr>
+        <tr>
+            <td><b>Optimeeritud arendusprotsess:</b> Tehakse väike prototüüp, et teada saada, mis funktsioone osutuvad kasutajale oluliseks. Samuti avastatakse ja parandatakse probleeme varajases staadiumis.</td>
+            <td><b>Disain ei ole alati koodi sõbralik:</b> Alati pole võimalik programeerida asju täpselt kuidas oli disainis. Samuti võib programeerjaid limiteerida tarkvara, puudulikud oskused või eelarve.</td>
+        </tr>
+        <tr>
+            <td><b>Prognoositavad eelarved:</b> Algse prototüüpimise pärast on väiksem oht ootamatuteks iteratsioonideks.</td>
+            <td><b>Oht üle programeerimisele:</b> Keerulistes lahendustes võib tekkida liigset koodi probleemi lahendamiseks. </td>
+        </tr>
+        <tr>
+            <td><b>Väiksemad klienditoe kulud:</b> Kui toode luuakse algusest peale klientide peale mõeldes, lihtsustab see uute kasutajate kaasamist. Intuitiinve UX vähendab vigade arvu ja kliendide poolseid kaebusi, mis tekitaks tööd juurde.</td>
+            <td><b>Puudub paindlikus vanadel süsteemidel:</b> Mudeli integreerimine olemasolevatesse süsteemidesse võib osutuda keeruliseks ja vajada ümbertöötlemist.</td>
+        </tr>
+        <tr>
+            <td><b>Väiksem loobumismäär:</b> Ilma veadeta ja kergesti kasutatav rakendus hõlbsustab uute kasutajate tulekut ega pane inimesi loobuma.</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Kasutatud allikad</h2>
+    <a class="link" href="https://www.uxpin.com/studio/blog/design-driven-development/">What is Design-Driven Development</a>
+    <a class="link" href="https://www.eleken.co/blog-posts/design-driven-development-in-saas">Putting Design First: The Benefits of Design-Driven Development in SaaS</a>
+    <a class="link" href="https://updivision.com/blog/post/the-pros-cons-of-doing-design-driven-development">The pros & cons of doing design-driven development</a>
+    <br>
+    <br>
+    </div>
+</body>
+</html>

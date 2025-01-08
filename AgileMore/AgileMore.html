@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styleCSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile +</title>
+</head>
+<body>
+    <div class="header">
+        <h1>AGILE ARENDUSTSÜKKEL</h1>
+        <h4>Lisa lugemine</h4>
+    </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+    <div class="textarea">
+    <p>Eelneval lehel rääkisime Agiilsest arendusest, nüüd räägime spetsiifilistest agiilsete arendusmetoodikast.</p>
+    <h3>Arendusmetoodika nimekiri:</h3>
+    <p>
+    <a class="link" style="color:white" href="BehaviorDriven.html">Behavior-driven development</a><br>
+    <a class="link" style="color:white" href="DesignDriven.html">Design-driven development</a><br>
+    <a style="color:white" href="DomainDriven.html">Domein-driven development</a><br>
+    <a style="color:white" href="Secure.html">Secure by design</a><br>
+    <a style="color:white" href="TestDriven.html">Test-driven development</a><br>
+    <a style="color:white" href="AcceptTestDriven.html">Acceptance test-driven development</a><br>
+    <a style="color:white" href="ContinuousTestDriven.html">Continuois test-driven development</a><br>
+    <a style="color:white" href="Specification.html">Specification by example</a><br>
+    <a style="color:white" href="DataDriven.html">Data-driven development</a><br>
+    <a style="color:white" href="DataOrient.html">Data-oriented design</a><br>
+    </p>
+    </div>
+</body>
+</html>

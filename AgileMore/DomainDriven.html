@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styleCSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain-Driven Development (DDD)</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Domain-Driven Development (DDD)</h1>
+        <h3>Domeenipõhine disain</h3>
+    </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <div id="navbar"></div>
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+    <div class="textarea">
+    <p>Domeenipõhine disain (DDD) on meetod, mis seab prioriteediks konkreetse probleemvaldkonna mõistmise ja modelleerimise, 
+        kus tarkvarasüsteem toimib. See rõhutab vajadust tiheda koostöö järele domeeniekspertidega, et saada põhjalik arusaam domeeni üksikasjadest ja keerukusest.
+         DDD pakub põhimõtteid, mustreid ja tavasid, mis aitavad arendajatel oma tarkvarakujunduses domeenikontseptsioone täpselt tabada ja esitada.
+         <!--Vajab rakenduse näidet-->
+    </p>
+    <br>
+    <img class="center" src="../Pildid/DomainDrivenPic.png" width="900px" height="500px">
+    <br>
+    <br>
+    <table style="margin:auto">
+        <tr>
+            <th>Plussid</th>
+            <th>Miinused</th>
+        </tr>
+        <tr>
+            <td>Edendab tõhusat suhtlust domeeniekspertide, arendajate ja sidusrühmade vahel, kasutades ühist keelt.</td>
+            <td>Võib tekitada keerukust, eriti suurtes domeenides. Keeruliste ärivaldkondade täpne modelleerimine nõuab mitmetähenduslikkuse sügavat mõistmist ja hoolikat juhtimist.</td>
+        </tr>
+        <tr>
+            <td>Aitab meeskondadel seada prioriteediks rakenduse kõige väärtuslikumad valdkonnad, et saavutada ärieesmärgid.</td>
+            <td>Keerulistes valdkondades võib erinevate mudelite ja piiratud kontekstide joondamine olla keeruline. Selge suhtlus ja koordineerimine on vastuolude vältimiseks hädavajalikud.</td>
+        </tr>
+        <tr>
+            <td>Julgustab kujundama, mis kohandub arenevate ärivajaduste ja turutingimustega.</td>
+            <td>Rakendamine võib nõuda uusi tehnoloogiaid ja raamistikke, mis raskendab integreerimist olemasolevate süsteemidega. Jõudluse ja mastaapsuse probleemide lahendamine on eduka kasutuselevõtu jaoks ülioluline.</td>
+        </tr>
+        <tr>
+            <td>Säilitab selge vahe domeeniloogika, infrastruktuuri ja kasutajaliidese vahel. Toetab täpselt määratletud domeeniobjekte lihtsamaks ja täpsemaks testimiseks.</td>
+            <td>Meeskonnaliikmed võivad traditsiooniliste meetodite tundmise tõttu DDD-le vastu seista. Selle ületamiseks on vaja tõhusat suhtlust ja koolitust DDD eeliste kohta.</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Kasutatud allikad</h2>
+    <a class="link" href="https://www.geeksforgeeks.org/domain-driven-design-ddd/">Domain-Driven Design (DDD)</a>
+    <br>
+    <br>
+    </div>
+</body>
+</html>
