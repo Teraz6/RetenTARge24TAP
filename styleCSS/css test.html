@@ -4,13 +4,40 @@
     <link rel="stylesheet" href="test.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TEST Document</title>
 </head>
 <body>
+<script>
+function ProgramAlused(){
+    fetch("ProgNavbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("ProgNavbar").innerHTML = data;
+        });
+}
+
+function TAP(){
+    fetch("../navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+}
+</script>
 <div class="header">
     <h1>Konspekt RETEN</h1>
 </div>
-<!-- Navigtsiooni riba-->
+<div class="topnav">
+    <ul>
+        <li class="dropdown">
+            <button onClick="document.getElementById('TAP').innerHTML = data">Tarkvara</button>
+            <button onClick="document.replaceChild(ProgramAlused, TAP) = ProgramAlused">Programmeerimine</button>
+        </li>
+    </ul>
+</div>
+<div id="TAP"></div>
+<div id="ProgramAlused"></div>
+<!-- Navigtsiooni riba
 <div class="topnav">
     <ul>
         <li class="dropdown">
@@ -63,7 +90,7 @@
             </div>
         </li>
     </ul>
-</div>
+</div>-->
 <!--Navigatsiooni rea lõpp-->
     <h1>AHKKSFKSVMVVNFIFAFALDALFJGRGUJ</h1>
     <h2>GDRJSSDJSDHdshdshsdhsh</h2>
