@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Siin kood mis on kolme või rohkema navbari jaoks-->
+
+
+<script>
+
+function loadContent(fileName, targetDivId) {
+    // Fetch the content of the given file
+    fetch(fileName)
+        .then(response => response.text())
+        .then(data => {
+            // Load the content into the specified div
+            document.getElementById(targetDivId).innerHTML = data;
+
+            // Clear the content of all other divs to ensure only one is visible
+            const allDivs = ['ProgNavbar', 'navbar', 'otherContent'];
+            allDivs.forEach(divId => {
+                if (divId !== targetDivId) {
+                    document.getElementById(divId).innerHTML = '';
+                }
+            });
+        })
+}
+
+</script>
+
+    <!-- Buttons to trigger content swapping   loadcontent(HTML file, target div)-->
+    <button onclick="loadContent('ProgNavbar.html', 'ProgNavbar')">Load ProgNavbar</button>
+    <button onclick="loadContent('navbar.html', 'navbar')">Load Navbar</button>
+    <button onclick="loadContent('otherContent.html', 'otherContent')">Load Other Content</button>
+
+    <!-- Divs where the content will be loaded -->
+    <div id="ProgNavbar"></div>
+    <div id="navbar"></div>
+    <div id="otherContent"></div>
+</body>
+</html>

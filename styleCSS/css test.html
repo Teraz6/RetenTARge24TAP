@@ -9,11 +9,13 @@
 <body>
 <script>
 function ProgramAlused(){
-    fetch("ProgNavbar.html")
+    fetch("../ProgNavbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("ProgNavbar").innerHTML = data;
         });
+        // Content that is being replaced
+            document.getElementById("navbar").innerHTML = "";
 }
 
 function TAP(){
@@ -22,21 +24,19 @@ function TAP(){
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
         });
+        document.getElementById("ProgNavbar").innerHTML = "";
 }
+
 </script>
 <div class="header">
     <h1>Konspekt RETEN</h1>
 </div>
-<div class="topnav">
-    <ul>
-        <li class="dropdown">
-            <button onClick="document.getElementById('TAP').innerHTML = data">Tarkvara</button>
-            <button onClick="document.replaceChild(ProgramAlused, TAP) = ProgramAlused">Programmeerimine</button>
-        </li>
-    </ul>
+<div class="button-container">
+    <button onClick="TAP()">Tarkvara</button>
+    <button onClick="ProgramAlused()">Programmeerimine</button>
 </div>
-<div id="TAP"></div>
-<div id="ProgramAlused"></div>
+<div id="navbar"></div>
+<div id="ProgNavbar"></div>
 <!-- Navigtsiooni riba
 <div class="topnav">
     <ul>

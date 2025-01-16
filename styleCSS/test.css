@@ -164,8 +164,10 @@ table, th, td {
 	display: inline-block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px 15px;
 	text-decoration: none;
+	border: solid 1px;
+	border-color:#612124;
 }
  
 .topnav li a:hover, .dropdown:hover .dropbtn {
@@ -253,3 +255,31 @@ img.center.invert {
 	  flex-direction: column;
 	}
   }
+
+/* Container for the buttons */
+.button-container {
+    display: flex; /* Makes buttons align next to each other */
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+	border-bottom: solid 1px;
+	border-color:#612124;
+}
+
+  button {
+	display: block;
+	margin: auto;
+	background-color: #00000000; /* transparent background */
+	color:#612124;
+	border: solid 2px;
+	border-color: #612124;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color:#00000049;
+	color:#ff000d;
+	border-color:#ff000d;
+}
