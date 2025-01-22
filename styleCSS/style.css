@@ -267,11 +267,30 @@ img.invert {
     display: flex; /* Makes buttons align next to each other */
     justify-content: center; /* Centers the buttons horizontally */
     gap: 10px; /* Adds space between the buttons */
+}
+
+/* Container for the nav buttons */
+.nav-button-container {
+    display: flex; /* Makes buttons align next to each other */
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
 	border-bottom: solid 1px;
 	border-color:#612124;
 }
 
 button {
+	display: block;
+	background-color: #00000000; /* transparent background */
+	color:#612124;
+	border: solid 2px;
+	border-color: #612124;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+button.center {
 	display: block;
 	margin: auto;
 	background-color: #00000000; /* transparent background */
