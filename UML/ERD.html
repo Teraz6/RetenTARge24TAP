@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styleCSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,9 @@
         <h1>ER DIAGRAMM</h1>
     </div>
     <!-- NAVIGATSIOONI RIBA -->
-    <div id="navbar"></div>
-    <script>
-        fetch("../navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
+    <div id="TAPnavbar"></div>
+    <script src="../TAPnavbar.js"></script>
+    <!-- TEKSTI ALGUS -->
     <p>ER diagram (<i>Entity Relationship diagram</i>) on mudel andmebaasis esindatavate olemite tuvastamiseks ja nende olemite seoste esitamiseks.
          ER andmemudel määrab ettevõtte skeemi, mis kujutab graafiliselt andmebaasi üldist loogilist struktuuri. ER diagramm selgitab andmebaasis olevate olemite vahelisi seoseid.
          ER-mudeleid kasutatakse reaalmaailma objektide (nt inimene, auto või ettevõte) ja nende reaalmaailma objektide vahelise suhte modelleerimiseks. Lühidalt öeldes on ER diagramm andmebaasi struktuurivorming.

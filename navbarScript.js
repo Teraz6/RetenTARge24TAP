@@ -1,18 +1,18 @@
 function ProgramAlused(){
-    fetch("../ProgNavbar.html")
+    fetch("../Navbar/Prognavbar.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("ProgNavbar").innerHTML = data;
+            document.getElementById("Prognavbar").innerHTML = data;
         });
         // Content that is being replaced
-            document.getElementById("navbar").innerHTML = "";
+            document.getElementById("TAPnavbar").innerHTML = "";
 }
 
 function TAP(){
-    fetch("../navbar.html")
+    fetch("../Navbar/TAPnavbar.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("navbar").innerHTML = data;
+            document.getElementById("TAPnavbar").innerHTML = data;
         });
-        document.getElementById("ProgNavbar").innerHTML = "";
+        document.getElementById("Prognavbar").innerHTML = "";
 }

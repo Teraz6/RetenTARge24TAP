@@ -262,6 +262,15 @@ img.invert {
 	}
   }
 
+/* Container for the buttons */
+.button-container {
+    display: flex; /* Makes buttons align next to each other */
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+	border-bottom: solid 1px;
+	border-color:#612124;
+}
+
 button {
 	display: block;
 	margin: auto;

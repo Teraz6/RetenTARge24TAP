@@ -1,13 +1,7 @@
-<!-- Mis on uppercase vahendid-->
-<!-- Mille jaoks neid kasutatakse-->
-<!-- Milliseid vahendeid olen ise juba kasutanud-->
-<!-- 2 näidet uppercase vahendist mide veel kasutanud pole-->
-<!-- tööriista nimi/logo-->
-<!-- tööriista programmi akna pilt -->
-<!-- mida tööriistaga teha saab -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styleCSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,15 +13,9 @@
         <h1>UPPER CASE-VAHENDID</h1>
     </div>
     <!-- NAVIGATSIOONI RIBA -->
-    <div id="navbar"></div>
-    <script>
-        fetch("../navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
-    <!-- Teksti algus -->
+    <div id="TAPnavbar"></div>
+    <script src="../TAPnavbar.js"></script>
+    <!-- TEKSTI ALGUS -->
     <div class="textarea">
     <p>
         Upper CASE-vahendid toetavad analüüsi ja projekteerimist.

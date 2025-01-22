@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST Document</title>
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <script>
 function ProgramAlused(){
-    fetch("../ProgNavbar.html")
+    fetch("../Navbar/ProgNavbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("ProgNavbar").innerHTML = data;
         });
         // Content that is being replaced
-            document.getElementById("navbar").innerHTML = "";
+            document.getElementById("TAPnavbar").innerHTML = "";
 }
 
 function TAP(){
-    fetch("../navbar.html")
+    fetch("../Navbar/TAPnavbar.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("navbar").innerHTML = data;
+            document.getElementById("TAPnavbar").innerHTML = data;
         });
         document.getElementById("ProgNavbar").innerHTML = "";
 }
@@ -32,10 +33,11 @@ function TAP(){
     <h1>Konspekt RETEN</h1>
 </div>
 <div class="button-container">
+    <button><a href="../index.html"><i class="fas fa-home"></i></a></button>
     <button onClick="TAP()">Tarkvara</button>
     <button onClick="ProgramAlused()">Programmeerimine</button>
 </div>
-<div id="navbar"></div>
+<div id="TAPnavbar"></div>
 <div id="ProgNavbar"></div>
 <!-- Navigtsiooni riba
 <div class="topnav">

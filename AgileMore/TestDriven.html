@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styleCSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +14,9 @@
         <h3>Testimisel põhinev arendus</h3>
     </div>
     <!-- NAVIGATSIOONI RIBA -->
-    <div id="navbar"></div>
-    <script>
-        fetch("../navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
+    <div id="TAPnavbar"></div>
+    <script src="../TAPnavbar.js"></script>
+    <!-- TEKSTI ALGUS -->
     <div class="textarea">
     <p>Testimisel põhinev arendus on tarkvaraarenduse meetod, kus testid kirjutatakse enne tarkvara ennast. Arendusprotsess koosneb lühikestest iteratsioonidest, kus esmalt kirjutatakse ebaõnestuv test ning seejärel minimaalne kood, et see test läbi läheks.
         Selline arendus tagab olukorra, kus kogu kood on alati testitud. Sellisel viisil kirjutatud koodi on kergem refaktoreerida ning testid aitavad ka programmi eeldatavat käitumist dokumenteerida. Testimisel põhinevat arendust rakendatakse ka olemasoleva koodi täiustamisel ja silumisel.

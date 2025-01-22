@@ -7,92 +7,33 @@
     <title>RetenTARge24 Arendusprotsessi Ainemapp</title>
     <link rel="icon" type="image/x-icon" href="Pildid/Rlogo.png"> 
     <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header>
         <img id="Reten" src="Pildid/Backgroundimg.jpg" style="max-width:100%; height:auto">
     </header>
     <!-- HEADER -->
     <div class="header">
-        <h1>TARKVARA ARENDUSPROTSESSI TEHTUD TÖÖDE KONSPEKT</h1>
+        <h1>MINU KOOLITÖÖDE KONSPEKT</h1>
     </div>
-<!-- NAVIGATSIOONI RIBA -->
-    <div class="topnav">
-        <ul>
-            <li class="dropdown">
-                <a href="index.html" class="dropbtn">Esileht</a>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Elutsükkel</a>
-                <div class="dropdown-content">
-                    <a href="elutsykkel/Inkremental.html">Inkrementaal</a>
-                    <a href="elutsykkel/waterfall.html">Waterfall</a>
-                    <a href="elutsykkel/Prototyypimine.html">Prototüüp</a>
-                    <a href="elutsykkel/Spiraalmudel.html">Spiraal</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">CASE-vahendid</a>
-                <div class="dropdown-content">
-                    <a href="CASE-vahendid/main.html">CASE-vahendid</a>
-                    <a href="CASE-vahendid/uppercase.html">Upper CASE-vahendid</a>
-                    <a href="CASE-vahendid/lowercase.html">Lower CASE-vahendid</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Arengutsüklid</a>
-                <div class="dropdown-content">
-                    <a href="Arengutsyklid/Agile.html">Agile</a>
-                    <a href="AgileMore/AgileMore.html">Agile +</a>
-                    <a href="Arengutsyklid/BigBang.html">Big Bang</a>
-                    <a href="Arengutsyklid/DevOps.html">DevOps</a>
-                    <a href="Arengutsyklid/ExtremeProgramming.html">Extreme programming</a>
-                    <a href="Arengutsyklid/V-shape.html">V-shape</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Bitcoin kalkulaator</a>
-                <div class="dropdown-content">
-                    <a href="Bitcoin/Bitcoin.html">Bitcoin kalkulaator</a>
-                    <a href="Bitcoin/N6uetedokument.html">Bitcoin kalkulaatori nõuete dokument</a>
-                    <a href="https://github.com/Teraz6/MyFirstBitcoinCalculator">Bitcoin kalkulaatori REPO</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">UML</a>
-                <div class="dropdown-content">
-                    <a href="UML/UML.html">UML</a>
-                    <a href="UML/ERD.html">ER diagram</a>
-                    <a href="UML/Flowchart.html">Flowchart</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Database x Windows forms</a>
-                <div class="dropdown-content">
-                    <a href="DatabaseForm/DatabaseForm.html">Database x Windows forms</a>
-                    <a href="https://github.com/Teraz6/WindowsFormTAP">Database x Windows form REPO</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Project Libre x Cyber security</a>
-                <div class="dropdown-content">
-                    <a href="ProjectLibre/ProjectLibre.html">Project Libre x Cyber security</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Programmeerimise alused</a>
-                <div class="dropdown-content">
-                    <a href="Esilehed/ProgramAlused.html">Programmeerimise alused</a>
-                </div>
-            </li>
-        </ul>
+    <!-- NAVIGATSIOONI NUPUD-->
+    <div class="button-container">
+        <button><a href="index.html"><i class="fas fa-home"></i></a></button>
+        <button onClick="TAP()">Tarkvara</button>
+        <button onClick="ProgramAlused()">Programmeerimine</button>
     </div>
+    <!-- NAVIGATSIOONI RIBA -->
+    <script src="navbarScript.js"></script>
+    <div id="TAPnavbar"></div>
+    <div id="Prognavbar"></div>
     <br>
     <!-- TEKSTI ALGUS -->
     <div class="row">
         <!--Peamine osa-->
         <div class="main">
-            <h5>Siin on kõik minu tehtud tööd Tarkvara arendusprotsessi aines. Tehtud tööd leiate üles kasutades navigatsiooni riba.</h5>
+            <h5>Siin on minu kooliga seotud tööd. Tehtud tööd leiate üles kasutades navigatsiooni riba.</h5>
         </div>   
         <!--Küljel olev info-->
         <div class="side">

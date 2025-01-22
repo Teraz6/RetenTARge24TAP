@@ -265,9 +265,8 @@ img.center.invert {
 	border-color:#612124;
 }
 
-  button {
+button {
 	display: block;
-	margin: auto;
 	background-color: #00000000; /* transparent background */
 	color:#612124;
 	border: solid 2px;
@@ -282,4 +281,11 @@ button:hover {
 	background-color:#00000049;
 	color:#ff000d;
 	border-color:#ff000d;
+}
+
+i {
+	color:#612124;
+}
+i:hover {
+	color:#ff000d;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="../styleCSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,9 @@
           <h1>EXTREME PROGRAMMING</h1>
       </div>
      <!-- NAVIGATSIOONI RIBA -->
-     <div id="navbar"></div>
-     <script>
-         fetch("../navbar.html")
-             .then(response => response.text())
-             .then(data => {
-                 document.getElementById("navbar").innerHTML = data;
-             });
-     </script>
-    <!-- Teksti algus -->
+     <div id="TAPnavbar"></div>
+     <script src="../TAPnavbar.js"></script>
+     <!-- TEKSTI ALGUS -->
     <div class="textarea">
     <p><i>Extreme Programming</i> on tarkvaraarenduse metoodika, mis mõeldud parandama tarkvara kvaliteeti
      ja vastavust kliendi muutuvatele vajadustele. Tegemist on Agiilse tarkvaraarenduse alaliigina, mis toetab

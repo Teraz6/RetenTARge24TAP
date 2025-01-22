@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database x Windows form</title>
@@ -11,15 +12,9 @@
         <h1>DATABASE X WINDOWS FORM</h1>
     </div>
     <!-- NAVIGATSIOONI RIBA -->
-    <div id="navbar"></div>
-    <script>
-        fetch("../navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
-    <!-- Teksti algus -->
+    <div id="TAPnavbar"></div>
+    <script src="../TAPnavbar.js"></script>
+    <!-- TEKSTI ALGUS -->
     <div class="textarea">
     <p>Siin on tunnis tehtud C# database rakendus. Sisaldab andmebaasi, kus on kirjas toiduained koos nende kategooriatega.</p>
     <a class="link" href="https://github.com/Teraz6/WindowsFormTAP">Database x Windows form REPO</a>

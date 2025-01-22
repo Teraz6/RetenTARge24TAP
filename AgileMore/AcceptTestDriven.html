@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/a7231c4669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styleCSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,8 @@
         <h3>Aktsepteerimistesti põhine arendus</h3>
     </div>
     <!-- NAVIGATSIOONI RIBA -->
-    <div id="navbar"></div>
-    <script>
-        fetch("../navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
+    <div id="TAPnavbar"></div>
+    <script src="../TAPnavbar.js"></script>
     <div class="textarea">
     <p>Aktsepteerimistesti põhine arendus on meetod, mis paneb rõhku lõppkasutajatele/klientidele. See keskendub süsteemi tegeliku vajaliku funktsionaalsuse/käitumise pakkumisele.
          Selles metoodikas kirjutatakse vastuvõtutest kasutaja vaatenurgast ja testjuhtumid luuakse juba enne kodeerimise algust. ATDD on laiendatud
