@@ -1,5 +1,5 @@
 function ProgramAlused(){
-    fetch("Navbar/Prognavbar.html")
+    fetch("Navbar/indexPrognavbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("Prognavbar").innerHTML = data;
@@ -9,7 +9,7 @@ function ProgramAlused(){
 }
 
 function TAP(){
-    fetch("Navbar/TAPnavbar.html")
+    fetch("Navbar/indexTAPnavbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("TAPnavbar").innerHTML = data;
